@@ -1,0 +1,36 @@
+# Ignore Mac system files
+.DS_store
+
+# VS Code
+.vscode
+.vscode/
+!.vscode/tasks.js
+
+# JetBrains IDEs
+.idea/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore files related to API keys
+.env
+
+# build
+build/
+
+# Coverage
+coverage
+
+# Transpiled files
+dist/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
