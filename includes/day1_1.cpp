@@ -1,5 +1,5 @@
 
-#include "day1-1.hpp"
+#include "day1_1.h"
 #include <vector>
 
 void Sonar::setDepth(std::vector<int> initDepths)

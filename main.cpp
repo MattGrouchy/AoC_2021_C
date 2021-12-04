@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "includes/day1-1.hpp"
+#include "includes/day1_1.h"
 
 int main()
 {
