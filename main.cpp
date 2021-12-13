@@ -2,9 +2,10 @@
 #include <vector>
 #include <fstream>
 #include <string>
-#include "include/day2_1.h"
+#include "include/day02/day2_1.h"
 
 int main()
 {
-  day2Main();
+  std::cout << "AoC_2021"
+            << "\n";
 }

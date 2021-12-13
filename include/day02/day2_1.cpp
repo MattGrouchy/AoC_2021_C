@@ -1,9 +1,8 @@
-
-#include "day2_1.h"
 #include <sstream>
 #include <fstream>
 #include <iostream>
-#include "txt_read_write.h"
+#include "day2_1.h"
+#include "../utils/txt_read_write.h"
 
 Pilot::Pilot() : horizontal(0), depth(0), aim(0) {}
 
@@ -127,8 +126,9 @@ void day2Main()
   }
   else
   {
-    std::cout << "Could not open file"
-              << "\n";
+    std::cout << "Could not open file."
+              << "\n"
+              << "Is the file copied into the build direction, inside CMakeLists";
   }
 }
 

@@ -1,6 +1,32 @@
 #include "txt_read_write.h"
 #include <vector>
 #include <string>
+#include <fstream>
+#include <iostream>
+
+openFileResult getDataLines(std::string pathName)
+{
+  std::fstream theFile(pathName);
+  bool success = false;
+
+  std::cout << "Opening file: " << pathName
+            << "\n";
+  if (theFile.is_open())
+  {
+    std::cout << "File open"
+              << "\n";
+    success = true;
+  }
+  else
+  {
+    std::cout << "Could not open file."
+              << "\n"
+              << "Is the file copied into the build directory, inside CMakeLists"
+              << "\n";
+  }
+
+  return {theFile, success};
+}
 
 std::vector<std::string>
 tokenize(const std::string &str, const std::string &delimiters)
