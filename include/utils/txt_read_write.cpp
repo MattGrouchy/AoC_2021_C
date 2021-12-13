@@ -25,6 +25,9 @@ openFileResult getDataLines(std::string pathName)
               << "\n";
   }
 
+  // not able to return the fstream
+  // should make a generic function for getting lines.
+  // can  make functions that tokenize as needed.
   return {theFile, success};
 }
 

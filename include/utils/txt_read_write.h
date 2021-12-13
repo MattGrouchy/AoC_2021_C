@@ -1,5 +1,3 @@
-
-
 #ifndef txt_read_write_h
 #define txt_read_write_h
 
